@@ -1,0 +1,11 @@
+# Default Values for my Helm Chart
+
+container:
+  image: nginx
+  VolumeMounts:
+    mountPath: /usr/share/nginx/html
+
+hostPath:
+  path: /nginx-html
+
+replicaCount: 1
